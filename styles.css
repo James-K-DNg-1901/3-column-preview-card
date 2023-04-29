@@ -19,6 +19,7 @@ h2 {
 }
 
 p {
+    line-height: 1.5;
     font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
     padding: 0 3rem;
@@ -79,7 +80,7 @@ p {
 
 .btn-container{
     width: 10em;
-    height: 4em ;
+    height: 3em ;
     margin: 3em auto auto 3rem;
     background-color: hsl(0, 0%, 95%);
     border: 0.2em solid hsl(0, 0%, 95%);
