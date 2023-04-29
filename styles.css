@@ -1,0 +1,138 @@
+body {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    padding: 0 3rem;
+}
+
+h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.1rem;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0 3rem;
+}
+
+.container {
+    width: 60rem;
+    height: 31rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transition: 0.8s;
+}
+
+.column {
+    width: 20rem;
+    height: 31rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.c-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.c-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.img {
+    width: 4em;
+    height: 4em;
+    margin: 3rem auto 0 3rem;
+}
+
+.i-1 {
+    background: url(images/icon-sedans.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.i-2 {
+    background: url(images/icon-suvs.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.i-3 {
+    background: url(images/icon-luxury.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.btn-container{
+    width: 10em;
+    height: 4em ;
+    margin: 3em auto auto 3rem;
+    background-color: hsl(0, 0%, 95%);
+    border: 0.2em solid hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-1:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+
+.btn-2:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.btn-3:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 20rem;
+        height: 93rem;
+        grid-template-columns: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .c-1 {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    
+    .c-3 {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
